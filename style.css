@@ -338,16 +338,26 @@ img.slick-slide
     border-radius: 4px;
     margin: 10px 0px 10px;
 }
+.continue-btn:hover
+{
+    background-color: #f8946c;
+    box-shadow: 1px 3px 1px 3px #c57556;
+}
 .footer-btn
 {
     padding: 15px 20px;
     background-color: #ff5e8e;
-        color: #ffffffff;
+    color: #ffffffff;
     border: none;
     box-shadow: 1px 3px 1px 3px #c55669;
     border-radius: 4px;
     width: 100%;
     margin: 10px 0px 10px;
+}
+.footer-btn:hover
+{
+    background-color: #f8946c;
+    box-shadow: 1px 3px 1px 3px #c57556;
 }
 .form-name , .form-email , .search
 {
@@ -381,10 +391,23 @@ img.slick-slide
     padding: 5px;
     border-radius: 50%;
 }
+.contact:hover
+{
+    border-right: 3px solid #ff5e8e;
+    border-top: 3px solid #ff5e8e;
+    border-left: none;
+    border-bottom: none;
+    transition: 0.5s;
+}
 .share-btn
 {
     border: #c57556 2px solid;
     padding: 5px;
+}
+.share-btn:hover
+{
+    border-radius: 50%;
+    transition: 0.5s;
 }
 [class*="-title"]
 {
@@ -439,11 +462,7 @@ img.slick-slide
     margin-bottom: 20px;
     padding: 20px 20px;
 }
-.two-post
-{
-    display: flex;
 
-}
 .post-slider
 {
     margin-top: 15px ;
@@ -480,6 +499,11 @@ img.slick-slide
     border-radius: 5px;
     margin-top: 105px;
     text-align: center;
+}
+.ctgr
+{
+    margin-top: 25px;
+    border: solid #ff8b5e 2px;
 }
 .recent-post
 {
@@ -541,6 +565,11 @@ footer
     right: 0;
     top:0;
     border: 2px solid #e08484;
+}
+.two-post
+{
+    display: flex;
+    flex-wrap:wrap;
 }
 /* XS */
 @media(max-width:576px)
@@ -657,6 +686,206 @@ footer
 
     }
 } 
+
+/* MD */
+@media(min-width:768px)
+{
+    .container
+    {
+        max-width: 720px;
+        width: 720px;
+    }
+    .col-md-1
+    {
+        flex : 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-md-2
+    {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-md-3
+    {
+        flex:0 0 25%;
+        max-width:25%;
+    }
+    .col-md-4
+    {
+        flex:0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-md-5
+    {
+        flex:0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-md-6
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-md-7
+    {
+        flex:0 0 58.33333%;
+        max-width:58.33333%;
+    }
+    .col-md-8
+    {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-md-9
+    {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-md-10
+    {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-md-11
+    {
+        flex: 0 0 91.666667%;
+        max-width: 91.66667%;
+    }
+    .col-md-12
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }   
+    .sidebar
+    {
+        display: none;
+    }
+    .header-menu
+    {
+        display: none;
+    }
+    .search-post>input::placeholder
+    {
+        visibility: hidden;
+    }
+    .hidden-menu
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+    .hidden-contacts
+    {
+        display: none;
+    }
+    .contact-list
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+}  
+/* LG */
+@media(min-width:992px)
+{
+    .container
+    {
+        max-width: 960px;
+        width: 960px;
+    }
+    .col-lg-1
+    {
+        flex : 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-lg-2
+    {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-lg-3
+    {
+        flex:0 0 25%;
+        max-width:25%;
+    }
+    .col-lg-4
+    {
+        flex:0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-lg-5
+    {
+        flex:0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-lg-6
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-lg-7
+    {
+        flex:0 0 58.33333%;
+        max-width:58.33333%;
+    }
+    .col-lg-8
+    {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-lg-9
+    {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-lg-10
+    {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-lg-11
+    {
+        flex: 0 0 91.666667%;
+        max-width: 91.66667%;
+    }
+    .col-lg-12
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }  
+    .recent-post-img>img , .post-img>img
+    {
+        width: 100%;
+    }
+    .sidebar
+    {
+        display: block;
+    }
+    .header-menu
+    {
+        display: flex;
+        align-items: center;
+    }
+    .hidden-menu
+    {
+        display: none;
+    }
+    .hidden-contacts
+    {
+        display: none;
+    }
+    .contact-list
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
 /* SM */
 @media(min-width:576px)  
 {
@@ -762,204 +991,7 @@ footer
         display: none;
     }
 } 
-/* MD */
-@media(min-width:768px)
-{
-    .container
-    {
-        max-width: 720px;
-        width: 720px;
-    }
-    .col-md-1
-    {
-        flex : 0 0 8.33333%;
-        max-width: 8.33333%;
-    }
-    .col-md-2
-    {
-        flex: 0 0 16.66667%;
-        max-width: 16.66667%;
-    }
-    .col-md-3
-    {
-        flex:0 0 25%;
-        max-width:25%;
-    }
-    .col-md-4
-    {
-        flex:0 0 33.33333%;
-        max-width: 33.33333%;
-    }
-    .col-md-5
-    {
-        flex:0 0 41.66667%;
-        max-width: 41.66667%;
-    }
-    .col-md-6
-    {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    .col-md-7
-    {
-        flex:0 0 58.33333%;
-        max-width:58.33333%;
-    }
-    .col-md-8
-    {
-        flex: 0 0 66.66667%;
-        max-width: 66.66667%;
-    }
-    .col-md-9
-    {
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
-    .col-md-10
-    {
-        flex: 0 0 83.33333%;
-        max-width: 83.33333%;
-    }
-    .col-md-11
-    {
-        flex: 0 0 91.666667%;
-        max-width: 91.66667%;
-    }
-    .col-md-12
-    {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }   
-    .sidebar
-    {
-        display: none;
-    }
-    .header-menu
-    {
-        display: none;
-    }
-    .search-post>input::placeholder
-    {
-        visibility: hidden;
-    }
-    .hidden-menu
-    {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        
-    }
-    .hidden-contacts
-    {
-        display: none;
-    }
-    .contact-list
-    {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-}  
-/* LG */
-@media(min-width:992px)
-{
-    .container
-    {
-        max-width: 960px;
-        width: 960px;
-    }
-    .col-lg-1
-    {
-        flex : 0 0 8.33333%;
-        max-width: 8.33333%;
-    }
-    .col-lg-2
-    {
-        flex: 0 0 16.66667%;
-        max-width: 16.66667%;
-    }
-    .col-lg-3
-    {
-        flex:0 0 25%;
-        max-width:25%;
-    }
-    .col-lg-4
-    {
-        flex:0 0 33.33333%;
-        max-width: 33.33333%;
-    }
-    .col-lg-5
-    {
-        flex:0 0 41.66667%;
-        max-width: 41.66667%;
-    }
-    .col-lg-6
-    {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    .col-lg-7
-    {
-        flex:0 0 58.33333%;
-        max-width:58.33333%;
-    }
-    .col-lg-8
-    {
-        flex: 0 0 66.66667%;
-        max-width: 66.66667%;
-    }
-    .col-lg-9
-    {
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
-    .col-lg-10
-    {
-        flex: 0 0 83.33333%;
-        max-width: 83.33333%;
-    }
-    .col-lg-11
-    {
-        flex: 0 0 91.666667%;
-        max-width: 91.66667%;
-    }
-    .col-lg-12
-    {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }  
-    .recent-post-img>img , .post-img>img
-    {
-        width: 100%;
-    }
-    .sidebar
-    {
-        display: block;
-    }
-    .header-menu
-    {
-        display: flex;
-        align-items: center;
-    }
-    .hidden-menu
-    {
-        display: none;
-    }
-    .hidden-contacts
-    {
-        display: none;
-    }
-    .contact-list
-    {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-}
+
  /*XL*/
  @media(min-width:1200px)
 {
