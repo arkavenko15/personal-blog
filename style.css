@@ -365,6 +365,10 @@ img.slick-slide
     background-color: #f8946c;
     box-shadow: 1px 3px 1px 3px #c57556;
 }
+.footer-description
+{
+    line-height: 18px;
+}
 .form-name , .form-email , .search
 {
     padding: 15px 20px;
@@ -373,6 +377,7 @@ img.slick-slide
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
 .author-contacts 
 {
     display: flex;
@@ -454,6 +459,10 @@ img.slick-slide
 {
     margin-top: 10px;
 }
+.post-description
+{
+    line-height: 20px;
+}
 .recent-post-img>img , .post-img>img
 {
     width: 100%;
@@ -472,17 +481,17 @@ img.slick-slide
 .post-slider
 {
     margin-top: 15px ;
-    width: 90%;
+    width: 85%;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: rgb(255, 214, 235);
     border: #c55669 solid 2px;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 18px;
 }
 .post-slider>.slick-prev
 {
-    margin-left: -10px;
+    /* margin-left: -10px; */
 }
 .post-img-slide
 {
@@ -511,6 +520,16 @@ img.slick-slide
     margin-top: 25px;
     border: solid #ff8b5e 2px;
 }
+.ctgr a
+{
+    text-decoration: none;
+    color:#000;
+    font-weight: 600;
+}  
+.ctgr:hover
+{
+    background-color: #ff8b5e;
+}  
 .recent-post
 {
     display: flex;
@@ -563,6 +582,10 @@ footer
 .footer-item
 {
     position: relative;
+}
+.tweet-message
+{
+    line-height: 18px;
 }
 .scroll-start
 {
